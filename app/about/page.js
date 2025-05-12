@@ -8,7 +8,7 @@ export default function About() {
     <div className={styles.aboutSection}>
       <h1 className={styles.fadeIn}>Know About Us</h1>
       <p className={styles.fadeIn}>
-        We're a new kind of homeownership company that utilizes technology to make home buying faster, easier, and better.
+        We&apos;re a new kind of homeownership company that utilizes technology to make home buying faster, easier, and better.
       </p>
 
       <Image
