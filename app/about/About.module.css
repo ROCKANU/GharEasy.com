@@ -1,0 +1,123 @@
+/* General styling for the page */
+.aboutSection {
+  padding: 50px;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+/* Animations for fade in effects */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fadeInImage {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Section header and paragraph styling */
+.aboutHeader {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.aboutParagraph {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.aboutImage {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styling for Mission, Vision, and Team */
+.mission, .vision, .team {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #e3f2fd;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+/* Hover effect on sections */
+.mission:hover, .vision:hover, .team:hover {
+  transform: translateY(-10px);
+}
+
+.sectionHeader {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Contact form styling */
+.contactForm {
+  background-color: #fafafa;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputField, .textArea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.textArea {
+  height: 100px;
+  resize: none;
+}
+
+.submitButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aboutHeader {
+    font-size: 2rem;
+  }
+
+  .aboutImage {
+    width: 100%;
+  }
+
+  .inputField, .textArea {
+    width: 100%;
+  }
+}
